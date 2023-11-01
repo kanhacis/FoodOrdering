@@ -37,4 +37,4 @@ class Review(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name="reviews")
     description = models.TextField(blank=True)
-    date = models.DateField()
+    date = models.DateField() 

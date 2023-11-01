@@ -9,4 +9,4 @@ class Bag(models.Model):
 class BagItem(models.Model):
     bag = models.ForeignKey(Bag, on_delete=models.CASCADE)
     menu = models.ForeignKey(Menu, on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField()
+    quantity = models.PositiveIntegerField() 
