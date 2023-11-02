@@ -18,6 +18,3 @@ class Menu(models.Model):
     image1 = models.ImageField(upload_to="menu_images/")
     image2 = models.ImageField(upload_to="menu_images/", blank=True)
     image3 = models.ImageField(upload_to="menu_images/", blank=True)
-
-    def __str__(self):
-        return self.name 
